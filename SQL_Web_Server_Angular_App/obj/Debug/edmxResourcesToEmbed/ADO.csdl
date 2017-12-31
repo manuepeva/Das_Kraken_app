@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="mydbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EMPLOYEESTABLE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="FIRSTNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LASTNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GENDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SALARY" Type="Int32" />
+    <Property Name="DATEOFBIRTH" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityContainer Name="myDBConnections" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EMPLOYEESTABLE" EntityType="Self.EMPLOYEESTABLE" />
+  </EntityContainer>
+</Schema>
