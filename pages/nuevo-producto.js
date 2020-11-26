@@ -8,7 +8,7 @@ import Layout from '../Components/Layout/Layout';
 import { Campo, Formulario, InputSubmit, Error } from '../Components/UserInterface/Styles/Formulario';
 
 // Base de Datos firebase
-import { FirebaseContext } from '../Firebase';
+import FirebaseContext from '../Firebase/context';
 
 // Validaciones
 import UseValidacion from '../Components/Hooks/UseValidacion';

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react'
 
-import { FirebaseContext } from '../../Firebase';
+import FirebaseContext  from '../../Firebase/context';
 
 
 const UseProductos = orden => {

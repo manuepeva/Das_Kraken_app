@@ -29,8 +29,6 @@ const Buscar = () => {
 
         let busqueda = q.toLowerCase();
         console.log(busqueda, 'esta es la bussqueda')
-        let rows = productos.length;
-
         const filtered = productos.filter(prod => prod.descripcion.toLowerCase().includes(busqueda) ||
             prod.nombre.toLowerCase().includes(busqueda));
         guardarResultado(filtered)

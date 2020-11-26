@@ -9,7 +9,7 @@ import { Campo, InputSubmit } from '../../Components/UserInterface/Styles/Formul
 import Boton from '../../Components/UserInterface/Boton';
 
 // Importar la base de datos Firebase
-import { FirebaseContext } from '../../Firebase';
+import FirebaseContext from '../../Firebase/context'
 
 import Error404 from '../../Components/Layout/Error404';
 
